@@ -5,20 +5,14 @@ requested_pokemon = input('Name a pokemon: ')
 
 first_response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{requested_pokemon}")
 
-print(type(first_response))
-
-
-
 
 json_first_response = first_response.json()
 
 list_of_moves = json_first_response.get('moves')
 
-#print(list_of_moves)
-
+#counter to go with for loop
 num=0
 printed_lst = []
-
 
 for abilities in list_of_moves:
     initial_dict_of_move = list_of_moves[num].get('move')
