@@ -1,11 +1,6 @@
 import requests
 import json
 
-test = requests.get('https://api.polygon.io/v1/open-close/AAPL/2020-10-14?adjusted=true&apiKey=co2QImBccDRUMKypJPDfGMIK529lv9TA')
-
-print(test.json())
-
-
 key = 'co2QImBccDRUMKypJPDfGMIK529lv9TA'
 
 ticker = input("Ticker you wish to view: ")
